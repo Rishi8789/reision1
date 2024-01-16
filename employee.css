@@ -1,0 +1,55 @@
+/* Add your styling here */
+
+/* Add styling for employee cards and pagination links */
+
+.employee-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+}
+.employee-card img{
+    width: 70%;
+}
+#page-header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Adjust background color as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    z-index: 1000; /* Ensure the header stays on top of other elements */
+}
+#pagination-container {
+    margin-top: 20px;
+}
+
+#pagination-container a {
+    margin-right: 5px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#pagination-container a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+#employee-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Adjust the gap between cards as needed */
+    margin-top: 120px;
+    /* width: 30%; */
+    
+}
+#filter-container{
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+

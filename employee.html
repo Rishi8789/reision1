@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="employee.css">
+</head>
+<body>
+
+    <header id="page-header">
+        <h1>Employee Management System</h1>
+        <div id="filter-container">
+            <label for="sort-select">Sort By Salary:</label>
+            <select id="sort-select">
+                <option value="asc">Low to High</option>
+                <option value="desc">High to Low</option>
+            </select>
+        
+            <label for="department-select">Filter by Department:</label>
+            <select id="department-select">
+                <option value="">All Departments</option>
+                <option value="engineering">Engineering</option>
+                <option value="marketing">Marketing</option>
+                <option value="operations">Operations</option>
+                <option value="finance">Finance</option>
+            </select>
+        
+            <label for="gender-select">Filter by Gender:</label>
+            <select id="gender-select">
+                <option value="">All Genders</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div id="pagination-container"></div>
+    </header>
+    
+    <main id="employee-container">
+        <!-- Employee cards will be dynamically added here using JavaScript -->
+    </main>
+    
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
